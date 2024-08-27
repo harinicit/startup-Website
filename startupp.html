@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startups in India</title>
+    <!-- Import Custom Font -->
+    <link rel="stylesheet" href="https://use.typekit.net/ojv4ekx.css">
+    <!-- Bootstrap CSS for general styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "europa", sans-serif;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        :root {
+            --primary: #ffb32c;
+            --primary-variant: #F17C1C;
+            --text: #000;
+            --text-variant: #fff;
+            --highlight: #8EE619;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: var(--text-variant);
+            color: var(--primary-variant);
+            z-index: 1;
+        }
+
+        .navbar {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        .navbar-brand {
+            font-size: 2rem;
+            font-weight: bolder;
+            color: #e6198e;
+        }
+
+        .nav-link {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: var(--primary-variant);
+        }
+
+        .nav-link:hover {
+            color: #e6198e;
+        }
+
+        /* Hero Section */
+        #hero-section {
+            position: relative;
+            height: 20vh;
+            background-color: #d500527e;
+            text-align: center;
+            padding: 8% 1%;
+        }
+
+        #hero-section h1 {
+            color: #ffffff;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 106%;
+            margin-bottom: 10px;
+        }
+
+        #hero-section p {
+            color: rgb(57, 57, 57);
+            font-size: 1.2em;
+        }
+
+        /* Startups List and Details */
+        .list-group {
+            margin-top: 20px;
+        }
+
+        .list-group-item {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .list-group-item:hover {
+            background-color: #f7f7f7;
+            box-shadow: 0 4px 8px rgba(247, 160, 196, 0.341);
+        }
+
+        .startup-details {
+            display: none;
+            margin-top: 10px;
+            background-color: #F5F5F9;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .startup-details h3 {
+            color: #e6198e;
+            margin-bottom: 10px;
+        }
+
+        .startup-details p {
+            color: #35353F;
+            margin-bottom: 10px;
+        }
+
+        .startup-details a {
+            color: #e6198e;
+            text-decoration: none;
+        }
+
+        .startup-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media only screen and (max-width: 768px) {
+            #hero-section {
+                padding-top: 5%;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            #hero-section {
+                padding-right: 5%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Startups India</a>
+    </nav>
+
+    <section id="hero-section">
+        <h1>Women-led Startups in India</h1>
+        <p>Discover the innovative startups led by women in India.</p>
+    </section>
+
+    <div class="container mt-5">
+        <div class="list-group">
+            <!-- Zivame -->
+            <a class="list-group-item" onclick="toggleDetails('startup1')">
+                Zivame
+            </a>
+            <div id="startup1" class="startup-details">
+                <h3>Zivame</h3>
+                <p>Zivame, founded by Richa Kar, is an online lingerie store that aims to help women understand their
+                    lingerie needs and shop for them with ease.</p>
+                <p>Website: <a href="https://www.zivame.com" target="_blank">www.zivame.com</a></p>
+            </div>
+
+            <!-- Nykaa -->
+            <a class="list-group-item" onclick="toggleDetails('startup2')">
+                Nykaa
+            </a>
+            <div id="startup2" class="startup-details">
+                <h3>Nykaa</h3>
+                <p>Nykaa, founded by Falguni Nayar, is one of the leading online beauty retailers in India, offering a
+                    wide range of beauty, wellness, and fashion products.</p>
+                <p>Website: <a href="https://www.nykaa.com" target="_blank">www.nykaa.com</a></p>
+            </div>
+
+            <!-- Sheroes -->
+            <a class="list-group-item" onclick="toggleDetails('startup3')">
+                Sheroes
+            </a>
+            <div id="startup3" class="startup-details">
+                <h3>Sheroes</h3>
+                <p>Sheroes, founded by Sairee Chahal, is a platform dedicated to helping women find career
+                    opportunities, mentorship, and community support.</p>
+                <p>Website: <a href="https://sheroes.com" target="_blank">sheroes.com</a></p>
+            </div>
+
+            <!-- Rang De -->
+            <a class="list-group-item" onclick="toggleDetails('startup4')">
+                Rang De
+            </a>
+            <div id="startup4" class="startup-details">
+                <h3>Rang De</h3>
+                <p>Rang De, co-founded by Smita Ram, is a peer-to-peer lending platform that supports rural
+                    entrepreneurs and students across India.</p>
+                <p>Website: <a href="https://rangde.in" target="_blank">rangde.in</a></p>
+            </div>
+
+            <!-- Clovia -->
+            <a class="list-group-item" onclick="toggleDetails('startup5')">
+                Clovia
+            </a>
+            <div id="startup5" class="startup-details">
+                <h3>Clovia</h3>
+                <p>Clovia, co-founded by Neha Kant, is a lingerie and innerwear brand that offers stylish and
+                    comfortable products for women across India.</p>
+                <p>Website: <a href="https://www.clovia.com" target="_blank">www.clovia.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            const allDetails = document.querySelectorAll('.startup-details');
+
+            allDetails.forEach(detail => {
+                if (detail !== details) {
+                    detail.style.display = 'none';
+                }
+            });
+
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
